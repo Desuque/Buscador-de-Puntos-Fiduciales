@@ -43,7 +43,9 @@ class Procesador {
                     // Procesamiento de cada imagen.
                     System.out.println("Procesando: " + String.format("%.2f", i * 100.0 / 120.0) + "%");
                 }
-                this.detectCenters(Imgcodecs.imread(folder.getName() + "/" + listOfFiles[i].getName()), listOfFiles[i].getName());
+                if (listOfFiles[i].getName().contains(".jpg")) {
+                    this.detectCenters(Imgcodecs.imread(folder.getName() + "/" + listOfFiles[i].getName()), listOfFiles[i].getName());
+                }
             } else if (listOfFiles[i].isDirectory()) {
                 System.err.println("No se detectaron imágenes.");
             }
