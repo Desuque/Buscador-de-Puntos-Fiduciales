@@ -1,4 +1,3 @@
-import javafx.geometry.Point3D;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
 import org.opencv.core.Scalar;
@@ -88,15 +87,15 @@ class PuntoFiduciario {
     }
 
     double getX() {
-        return this._point.getX();
+        return this._point.x;
     }
 
     double getY() {
-        return this._point.getY();
+        return this._point.y;
     }
 
     double getZ() {
-        return this._point.getZ();
+        return this._point.z;
     }
 
     String bestImage() { return this._bestResolution; }
@@ -137,6 +136,6 @@ class PuntoFiduciario {
         double coordX = point.getX();
         double coordY = point.getY();
 
-        return sqrt(pow(abs(this._point.getX() - coordX), 2) + pow(abs(this._point.getY() - coordY), 2)) < MAX_DIFF;
+        return sqrt(pow(abs(this._point.x - coordX), 2) + pow(abs(this._point.y - coordY), 2)) < MAX_DIFF;
     }
 }
