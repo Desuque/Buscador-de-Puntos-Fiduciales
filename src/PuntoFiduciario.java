@@ -38,6 +38,7 @@ class PuntoFiduciario {
         double coordX = 0;
         double coordY = 0;
         List<AuxCoordZ> coordZ = new ArrayList<AuxCoordZ>();
+        this._files = new ArrayList<String>();
 
         for (int i = 0 ; i < points.size() ; i++){
             PuntoAuxiliar point = points.get(i);
@@ -127,7 +128,7 @@ class PuntoFiduciario {
         }
 
         Imgproc.resize(img, img, new Size(512,512));
-        HighGui.imshow("Punto Fiduciario " + point + " del archivo " + folder + "/" + this._bestResolution, img);
+        HighGui.imshow("Punto Fiduciario " + point + " del Archivo " + folder + "/" + this._bestResolution, img);
         HighGui.waitKey();
     }
 
