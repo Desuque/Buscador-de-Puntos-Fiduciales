@@ -41,11 +41,11 @@ class PuntoAuxiliar {
         return this._point.y;
     }
 
-    public String filename(){
+    String filename(){
         return this._image;
     }
 
-    public int radius() {
+    int radius() {
         return this._radius;
     }
 }
