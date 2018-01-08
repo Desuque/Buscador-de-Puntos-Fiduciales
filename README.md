@@ -16,4 +16,4 @@ java -jar -Djava.library.path=./opencv-3.3.1/build/lib ./tp.jar <paramatros>
 Parametros:
 * -f <folder> Especifica la carpeta de donde se obtendran las imagenes de los cortes encefalicos.
 * -o <output> Especifica el archivo de salida donde se guardaran las 3 coordenadas de los puntos fiduciarios.
-*-sp <showpoints> Muestra las imagenes de mejor resolucion de los puntos fiduciarios.
+* -sp <showpoints> Muestra las imagenes de mejor resolucion de los puntos fiduciarios.
